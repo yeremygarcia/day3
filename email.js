@@ -26,3 +26,14 @@ let appData = {
     { from: "Bob" },
   ],
 };
+
+//Get a list of mailbox names
+console.log(appData.mailboxes);
+//Get a list of emails
+console.log(appData.contacts);
+//Get the text of the second email in the visible list
+console.log(appData.contacts[1].lastMessage);
+//Mark an email as sent
+console.log((appData.contacts[1].status = "sent"));
+//Add a draft email to the drafts mailbox
+console.log((appData.contacts[2].status = "draft"));
