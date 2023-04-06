@@ -36,4 +36,7 @@ console.log(appData.contacts[1].lastMessage);
 //Mark an email as sent
 console.log((appData.contacts[1].status = "sent"));
 //Add a draft email to the drafts mailbox
-console.log((appData.contacts[2].status = "draft"));
+let draftEmail = { Subject: "draft" };
+console.log("Before: ", appData.drafts);
+appData.drafts[0] = draftEmail;
+console.log("After: ", appData.drafts);
